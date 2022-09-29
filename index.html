@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/nouislider.min.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+
+    <title>YOURTRUECAR</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://demos.jquerymobile.com/1.4.2/css/themes/default/jquery.mobile-1.4.2.min.css">
+    <script src="https://demos.jquerymobile.com/1.4.2/js/jquery.js"></script>
+
+
+    <title>YOURTRUECAR</title>
+</head>
+
+<body>
+
+
+    <div class="wrapper">
+
+        <header class="header">
+            <nav class="main-nav">
+                <div class="container">
+                    <div class="main-nav__inner">
+                        <div class="main-nav__logo">
+                            <img class="main-nav__logo-image" src="assets/images/Logo.png" alt="YOURTRUECAR">
+                        </div>
+                        <ul class="main-nav__list">
+                            <li class="main-nav__item">
+                                <a class="main-nav__link" href="#result-auto">Авто на аукціоні</a>
+                            </li>
+                            <li class="main-nav__item">
+                                <a class="main-nav__link" href="#calculator">Калькулятор вартості</a>
+                            </li>
+                            <li class="main-nav__item">
+                                <a class="main-nav__link" href="#excellence">Про нас</a>
+                            </li>
+                            <li class="main-nav__item">
+                                <a class="main-nav__link" href="#recall">Відгуки клієнтів</a>
+                            </li>
+                        </ul>
+                        <div class="main-nav__phone">
+                            <a class="main-nav__phone-link" href="tel:+79899899898">
+                                <img class="main-nav__phone-image" src="assets/images/icon/phone.svg" alt="Позвонить">
+                            </a>
+                        </div>
+                        <div class="main-nav__burger">
+                            <img class="main-nav__burger-image" src="assets/images/icon/burger.svg" alt="Меню">
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div id="burger-menu" class="popup-fade">
+            <div class="burger-menu">
+                <ul class="main-nav__list">
+                    <li class="main-nav__item">
+                        <a class="main-nav__link" href="#result-auto">Авто на аукціоні</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a class="main-nav__link" href="#calculator">Калькулятор вартості</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a class="main-nav__link" href="#excellence">Про нас</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a class="main-nav__link" href="#recall">Відгуки клієнтів</a>
+                    </li>
+                    <button class="popup-close" href="#">
+                        <img class="popup-close__image" src="assets/images/icon/close-modal.svg" alt="Закрыть">
+                    </button>
+                </ul>
+
+            </div>
+        </div>
+
+        <main class="page">
+            <section class="search-auto">
+                <div class="container">
+                    <div class="search-auto__inner">
+                        <h1 class="search-auto__title">
+                            Аукціон <span class="orange-txt">авто</span> із США
+                        </h1>
+                        <div class="search-auto__subtitle">
+                            пошук автомобілів на головних
+                            американських автоаукціонах підтриманих авто
+                        </div>
+                        <form class="search-auto__form" action="/" method="get">
+                            <input class="search-auto__form-input" type="text"
+                                placeholder="Пошук авто по VIN або ID лота" required>
+                            <button class="search-auto__form-btn" type="submit">
+                                <img class="search-auto__form-image" src="assets/images/icon/search.svg" alt="">
+                            </button>
+                        </form>
+                        <div class="search-auto__subform">
+                            Введіть VIN або ID для того щоб знайти
+                            варіанти авто з різних аукціонів
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="search-auto__chat">
+                <button class="search-auto__chat-button">
+                    <img class="search-auto__chat-image" src="assets/images/icon/chat.svg" alt="Чат">
+                    <div class="search-auto__chat-count">1</div>
+                </button>
+            </div>
+
+            <section class="result-auto" id="result-auto">
+                <div class="container">
+                    <div class="result-auto__inner">
+                        <div class="result-auto__category">
+                            <div class="result-auto__top">
+                                <div class="result-auto__top-title">
+                                    Найдено 100 000 результатів
+                                </div>
+                                <div class="result-auto__top-sort">
+
+                                    <div class="form-group">
+                                        <div class="result-auto__top-sort-title">Сортування:</div>
+                                        <div class="dropdown">
+                                            <button class="dropdown__button">Дата оновлення</button>
+                                            <ul class="dropdown__list">
+                                                <li class="dropdown__list-item" data-value="travel">Дата оновлення</li>
+                                                <li class="dropdown__list-item" data-value="lessons">Porshe</li>
+                                                <li class="dropdown__list-item" data-value="photo">Ferrari</li>
+                                                <li class="dropdown__list-item" data-value="sport">Ford</li>
+                                            </ul>
+                                            <input type="text" name="select-category" value=""
+                                                class="dropdown__input-hidden">
+                                        </div>
+                                        <button class="result-auto__top-sort-btn">
+                                            <img src="assets/images/icon/group.svg" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="result-auto__bottom">
+                                <div class="result-auto__types">
+                                    <div class="form-group">
+                                        <div class="result-auto__types-auction">
+                                            <button class="result-auto__types-auction-btn">Аукціони</button>
+                                            <div class="result-auto__types-auction-radio">
+                                                <input class="result-auto__types-auction-input" type="radio"
+                                                    name="auction" id="a1">
+                                                <label class="result-auto__types-auction-label" for="a1">Copart</label>
+
+                                                <input class="result-auto__types-auction-input" type="radio"
+                                                    name="auction" id="a2">
+                                                <label class="result-auto__types-auction-label" for="a2">IAAI</label>
+
+                                                <input class="result-auto__types-auction-input" type="radio"
+                                                    name="auction" id="a3">
+                                                <label class="result-auto__types-auction-label" for="a3">Impact</label>
+
+                                                <input class="result-auto__types-auction-input" type="radio"
+                                                    name="auction" id="a4">
+                                                <label class="result-auto__types-auction-label" for="r4">Manheim</label>
+                                            </div>
+                                        </div>
+                                        <div id="dropdown" class="dropdown">
+                                            <button class="dropdown__button">Модель авто</button>
+                                            <ul class="dropdown__list">
+                                                <li class="dropdown__list-item" data-value="travel">Модель авто</li>
+                                                <li class="dropdown__list-item" data-value="lessons">Porshe</li>
+                                                <li class="dropdown__list-item" data-value="photo">Ferrari</li>
+                                                <li class="dropdown__list-item" data-value="sport">Ford</li>
+                                            </ul>
+                                            <input type="text" name="select-category" value=""
+                                                class="dropdown__input-hidden">
+                                        </div>
+
+                                        <div class="dropdown">
+                                            <button class="dropdown__button">Привід</button>
+                                            <ul class="dropdown__list">
+                                                <li class="dropdown__list-item" data-value="travel">Привід</li>
+                                                <li class="dropdown__list-item" data-value="lessons">Porshe</li>
+                                                <li class="dropdown__list-item" data-value="photo">Ferrari</li>
+                                                <li class="dropdown__list-item" data-value="sport">Ford</li>
+                                            </ul>
+                                            <input type="text" name="select-category" value=""
+                                                class="dropdown__input-hidden">
+                                        </div>
+
+                                        <div class="dropdown">
+                                            <button class="dropdown__button">Тип продажу</button>
+                                            <ul class="dropdown__list">
+                                                <li class="dropdown__list-item" data-value="travel">Тип продажу</li>
+                                                <li class="dropdown__list-item" data-value="lessons">Porshe</li>
+                                                <li class="dropdown__list-item" data-value="photo">Ferrari</li>
+                                                <li class="dropdown__list-item" data-value="sport">Ford</li>
+                                            </ul>
+                                            <input type="text" name="select-category" value=""
+                                                class="dropdown__input-hidden">
+                                        </div>
+
+                                        <div class="dropdown">
+                                            <button class="dropdown__button">Дата продажу</button>
+                                            <ul class="dropdown__list">
+                                                <li class="dropdown__list-item" data-value="travel">Дата продажу</li>
+                                                <li class="dropdown__list-item" data-value="lessons">Porshe</li>
+                                                <li class="dropdown__list-item" data-value="photo">Ferrari</li>
+                                                <li class="dropdown__list-item" data-value="sport">Ford</li>
+                                            </ul>
+                                            <input type="text" name="select-category" value=""
+                                                class="dropdown__input-hidden">
+                                        </div>
+
+                                        <div class="dropdown">
+                                            <button class="dropdown__button">Трансмісія</button>
+                                            <ul class="dropdown__list">
+                                                <li class="dropdown__list-item" data-value="travel">Трансмісія</li>
+                                                <li class="dropdown__list-item" data-value="lessons">Porshe</li>
+                                                <li class="dropdown__list-item" data-value="photo">Ferrari</li>
+                                                <li class="dropdown__list-item" data-value="sport">Ford</li>
+                                            </ul>
+                                            <input type="text" name="select-category" value=""
+                                                class="dropdown__input-hidden">
+                                        </div>
+
+                                        <div class="dropdown">
+                                            <button class="dropdown__button">Паливо</button>
+                                            <ul class="dropdown__list">
+                                                <li class="dropdown__list-item" data-value="travel">Паливо</li>
+                                                <li class="dropdown__list-item" data-value="lessons">Porshe</li>
+                                                <li class="dropdown__list-item" data-value="photo">Ferrari</li>
+                                                <li class="dropdown__list-item" data-value="sport">Ford</li>
+                                            </ul>
+                                            <input type="text" name="select-category" value=""
+                                                class="dropdown__input-hidden">
+                                        </div>
+
+                                        <div class="dropdown">
+                                            <button class="dropdown__button">Кузов</button>
+                                            <ul class="dropdown__list">
+                                                <li class="dropdown__list-item" data-value="travel">Кузов</li>
+                                                <li class="dropdown__list-item" data-value="lessons">Porshe</li>
+                                                <li class="dropdown__list-item" data-value="photo">Ferrari</li>
+                                                <li class="dropdown__list-item" data-value="sport">Ford</li>
+                                            </ul>
+                                            <input type="text" name="select-category" value=""
+                                                class="dropdown__input-hidden">
+                                        </div>
+
+                                        <div class="dropdown">
+                                            <button class="dropdown__button">Колір</button>
+                                            <ul class="dropdown__list">
+                                                <li class="dropdown__list-item" data-value="travel">Колір</li>
+                                                <li class="dropdown__list-item" data-value="lessons">Porshe</li>
+                                                <li class="dropdown__list-item" data-value="photo">Ferrari</li>
+                                                <li class="dropdown__list-item" data-value="sport">Ford</li>
+                                            </ul>
+                                            <input type="text" name="select-category" value=""
+                                                class="dropdown__input-hidden">
+                                        </div>
+
+                                        <div class="dropdown">
+                                            <button class="dropdown__button">Стан</button>
+                                            <ul class="dropdown__list">
+                                                <li class="dropdown__list-item" data-value="travel">Стан</li>
+                                                <li class="dropdown__list-item" data-value="lessons">Porshe</li>
+                                                <li class="dropdown__list-item" data-value="photo">Ferrari</li>
+                                                <li class="dropdown__list-item" data-value="sport">Ford</li>
+                                            </ul>
+                                            <input type="text" name="select-category" value=""
+                                                class="dropdown__input-hidden">
+                                        </div>
+
+                                        <div class="dropdown">
+                                            <button class="dropdown__button">Основні пошкодження</button>
+                                            <ul class="dropdown__list">
+                                                <li class="dropdown__list-item" data-value="travel">Основні пошкодження
+                                                </li>
+                                                <li class="dropdown__list-item" data-value="lessons">Porshe</li>
+                                                <li class="dropdown__list-item" data-value="photo">Ferrari</li>
+                                                <li class="dropdown__list-item" data-value="sport">Ford</li>
+                                            </ul>
+                                            <input type="text" name="select-category" value=""
+                                                class="dropdown__input-hidden">
+                                        </div>
+
+                                        <div class="dropdown">
+                                            <button class="dropdown__button">Вторинні ушкодження</button>
+                                            <ul class="dropdown__list">
+                                                <li class="dropdown__list-item" data-value="travel">Вторинні ушкодження
+                                                </li>
+                                                <li class="dropdown__list-item" data-value="lessons">Porshe</li>
+                                                <li class="dropdown__list-item" data-value="photo">Ferrari</li>
+                                                <li class="dropdown__list-item" data-value="sport">Ford</li>
+                                            </ul>
+                                            <input type="text" name="select-category" value=""
+                                                class="dropdown__input-hidden">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="result-auto__ranges">
+                                    <div class="result-auto__ranges__item">
+                                        <div class="result-auto__ranges__item-title">Об’єм двигуна</div>
+                                        <div class="filters">
+                                            <div class="filters__item filters-price">
+                                                <div class="filters-price__inputs">
+                                                    <input type="number" min="0" max="1000" placeholder="0"
+                                                        class="filters-price__input" id="input-0">
+                                                    <input type="number" min="0" max="1000" placeholder="1000"
+                                                        class="filters-price__input" id="input-1">
+                                                </div>
+                                                <div class="filters-price__slider" id="range-slider"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="result-auto__ranges__item">
+                                        <div class="result-auto__ranges__item-title">Пробіг</div>
+                                        <div class="filters">
+                                            <div class="filters__item filters-price">
+                                                <div class="filters-price__inputs">
+                                                    <input type="number" min="0" max="1000" placeholder="0"
+                                                        class="filters-price__input" id="input-2">
+                                                    <input type="number" min="0" max="1000" placeholder="1000"
+                                                        class="filters-price__input" id="input-3">
+                                                </div>
+                                                <div class="filters-price__slider" id="range-slider-2"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="result-auto__ranges__item">
+                                        <div class="result-auto__ranges__item-title">Рік випуску</div>
+                                        <div class="filters">
+                                            <div class="filters__item filters-price">
+                                                <div class="filters-price__inputs">
+                                                    <input type="number" min="2000" max="5000" placeholder="2000"
+                                                        class="filters-price__input" id="input-4">
+                                                    <input type="number" min="2000" max="5000" placeholder="5000"
+                                                        class="filters-price__input" id="input-5">
+                                                </div>
+                                                <div class="filters-price__slider" id="range-slider-3"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="result-auto__ranges__close active">
+                                        <div class="result-auto__ranges__close-text">Приховати додаткові характеристики
+                                        </div>
+                                        <img class="result-auto__ranges__close-image"
+                                            src="assets/images/icon/range-arrow.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="result-auto__cards">
+                            <article class="result-auto__article">
+                                <div class="result-auto__card">
+                                    <div class="result-auto__image">
+                                        <img class="result-auto__img" src="assets/images/lambo.png" alt="Lamborgini">
+                                    </div>
+                                    <div class="result-auto__info">
+                                        <div class="result-auto__info-top">
+                                            <div class="result-auto__name">Lamborghini 2021</div>
+                                            <div class="result-auto__date">
+                                                <div class="result-auto__date-title">Дата аукціону</div>
+                                                <div class="result-auto__date-num">20.02.2021</div>
+                                            </div>
+                                        </div>
+                                        <div class="result-auto__list">
+                                            <div class="result-auto__item">
+                                                <img class="result-auto__item-image"
+                                                    src="assets/images/icon/calendar.svg" alt="">
+                                                <div class="result-auto__item-text">2021</div>
+                                            </div>
+                                            <div class="result-auto__item">
+                                                <img class="result-auto__item-image"
+                                                    src="assets/images/icon/benzine.svg" alt="">
+                                                <div class="result-auto__item-text">Бензин</div>
+                                            </div>
+                                            <div class="result-auto__item">
+                                                <img class="result-auto__item-image" src="assets/images/icon/road.svg"
+                                                    alt="">
+                                                <div class="result-auto__item-text">100 000 км</div>
+                                            </div>
+                                            <div class="result-auto__item">
+                                                <img class="result-auto__item-image"
+                                                    src="assets/images/icon/car-engine.svg" alt="">
+                                                <div class="result-auto__item-text">3,5 л</div>
+                                            </div>
+                                            <div class="result-auto__item">
+                                                <img class="result-auto__item-image" src="assets/images/icon/sedan.svg"
+                                                    alt="">
+                                                <div class="result-auto__item-text">Седан</div>
+                                            </div>
+                                            <div class="result-auto__item">
+                                                <img class="result-auto__item-image"
+                                                    src="assets/images/icon/engineering.svg" alt="">
+                                                <div class="result-auto__item-text">Не вказано</div>
+                                            </div>
+                                            <div class="result-auto__item">
+                                                <img class="result-auto__item-image" src="assets/images/icon/heart.svg"
+                                                    alt="">
+                                                <div class="result-auto__item-text">Не заводиться і не їде</div>
+                                            </div>
+                                            <div class="result-auto__item">
+                                                <img class="result-auto__item-image" src="assets/images/icon/sedan.svg"
+                                                    alt="">
+                                                <div class="result-auto__item-text">Вода/Наводнення</div>
+                                            </div>
+                                        </div>
+                                        <div class="result-auto__price">
+                                            <img class="result-auto__price-image" src="assets/images/icon/money.svg"
+                                                alt="">
+                                            <div class="result-auto__item-num">25$</div>
+                                        </div>
+                                        <div class="result-auto__buttons">
+                                            <button class="result-auto__button btn-white"
+                                                type="button">Тортуватись</button>
+                                            <button class="result-auto__button btn-pink" type="button">Більше
+                                                деталей</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="result-auto__mobile">
+                                    <div class="result-auto__date">
+                                        <div class="result-auto__date-title">Дата аукціону:</div>
+                                        <div class="result-auto__date-num">20.02.2021</div>
+                                    </div>
+                                    <div class="result-auto__list">
+                                        <div class="result-auto__item">
+                                            <img class="result-auto__item-image" src="assets/images/icon/calendar.svg"
+                                                alt="">
+                                            <div class="result-auto__item-text">2021</div>
+                                        </div>
+                                        <div class="result-auto__item">
+                                            <img class="result-auto__item-image" src="assets/images/icon/benzine.svg"
+                                                alt="">
+                                            <div class="result-auto__item-text">Бензин</div>
+                                        </div>
+                                        <div class="result-auto__item">
+                                            <img class="result-auto__item-image" src="assets/images/icon/road.svg"
+                                                alt="">
+                                            <div class="result-auto__item-text">100 000 км</div>
+                                        </div>
+                                        <div class="result-auto__item">
+                                            <img class="result-auto__item-image" src="assets/images/icon/car-engine.svg"
+                                                alt="">
+                                            <div class="result-auto__item-text">3,5 л</div>
+                                        </div>
+                                        <div class="result-auto__item">
+                                            <img class="result-auto__item-image" src="assets/images/icon/sedan.svg"
+                                                alt="">
+                                            <div class="result-auto__item-text">Седан</div>
+                                        </div>
+                                        <div class="result-auto__item">
+                                            <img class="result-auto__item-image"
+                                                src="assets/images/icon/engineering.svg" alt="">
+                                            <div class="result-auto__item-text">Не вказано</div>
+                                        </div>
+                                        <div class="result-auto__item">
+                                            <img class="result-auto__item-image" src="assets/images/icon/heart.svg"
+                                                alt="">
+                                            <div class="result-auto__item-text">Не заводиться і не їде</div>
+                                        </div>
+                                        <div class="result-auto__item">
+                                            <img class="result-auto__item-image" src="assets/images/icon/sedan.svg"
+                                                alt="">
+                                            <div class="result-auto__item-text">Вода/Наводнення</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="result-auto__arrow" type="button">
+                                    <img class="result-auto__arrow-image" src="assets/images/icon/arrow-auto.svg"
+                                        alt="">
+                                </button>
+                        </div>
+                        </article>
+                        <article class="result-auto__article">
+                            <div class="result-auto__card">
+                                <div class="result-auto__image">
+                                    <img class="result-auto__img" src="assets/images/lambo.png" alt="Lamborgini">
+                                </div>
+                                <div class="result-auto__info">
+                                    <div class="result-auto__info-top">
+                                        <div class="result-auto__name">Lamborghini 2021</div>
+                                        <div class="result-auto__date">
+                                            <div class="result-auto__date-title">Дата аукціону</div>
+                                            <div class="result-auto__date-num">20.02.2021</div>
+                                        </div>
+                                    </div>
+                                    <div class="result-auto__list">
+                                        <div class="result-auto__item">
+                                            <img class="result-auto__item-image" src="assets/images/icon/calendar.svg"
+                                                alt="">
+                                            <div class="result-auto__item-text">2021</div>
+                                        </div>
+                                        <div class="result-auto__item">
+                                            <img class="result-auto__item-image" src="assets/images/icon/benzine.svg"
+                                                alt="">
+                                            <div class="result-auto__item-text">Бензин</div>
+                                        </div>
+                                        <div class="result-auto__item">
+                                            <img class="result-auto__item-image" src="assets/images/icon/road.svg"
+                                                alt="">
+                                            <div class="result-auto__item-text">100 000 км</div>
+                                        </div>
+                                        <div class="result-auto__item">
+                                            <img class="result-auto__item-image" src="assets/images/icon/car-engine.svg"
+                                                alt="">
+                                            <div class="result-auto__item-text">3,5 л</div>
+                                        </div>
+                                        <div class="result-auto__item">
+                                            <img class="result-auto__item-image" src="assets/images/icon/sedan.svg"
+                                                alt="">
+                                            <div class="result-auto__item-text">Седан</div>
+                                        </div>
+                                        <div class="result-auto__item">
+                                            <img class="result-auto__item-image"
+                                                src="assets/images/icon/engineering.svg" alt="">
+                                            <div class="result-auto__item-text">Не вказано</div>
+                                        </div>
+                                        <div class="result-auto__item">
+                                            <img class="result-auto__item-image" src="assets/images/icon/heart.svg"
+                                                alt="">
+                                            <div class="result-auto__item-text">Не заводиться і не їде</div>
+                                        </div>
+                                        <div class="result-auto__item">
+                                            <img class="result-auto__item-image" src="assets/images/icon/sedan.svg"
+                                                alt="">
+                                            <div class="result-auto__item-text">Вода/Наводнення</div>
+                                        </div>
+                                    </div>
+                                    <div class="result-auto__price">
+                                        <img class="result-auto__price-image" src="assets/images/icon/money.svg" alt="">
+                                        <div class="result-auto__item-num">25$</div>
+                                    </div>
+                                    <div class="result-auto__buttons">
+                                        <button class="result-auto__button btn-white" type="button">Тортуватись</button>
+                                        <button class="result-auto__button btn-pink" type="button">Більше
+                                            деталей</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="result-auto__mobile">
+                                <div class="result-auto__date">
+                                    <div class="result-auto__date-title">Дата аукціону:</div>
+                                    <div class="result-auto__date-num">20.02.2021</div>
+                                </div>
+                                <div class="result-auto__list">
+                                    <div class="result-auto__item">
+                                        <img class="result-auto__item-image" src="assets/images/icon/calendar.svg"
+                                            alt="">
+                                        <div class="result-auto__item-text">2021</div>
+                                    </div>
+                                    <div class="result-auto__item">
+                                        <img class="result-auto__item-image" src="assets/images/icon/benzine.svg"
+                                            alt="">
+                                        <div class="result-auto__item-text">Бензин</div>
+                                    </div>
+                                    <div class="result-auto__item">
+                                        <img class="result-auto__item-image" src="assets/images/icon/road.svg" alt="">
+                                        <div class="result-auto__item-text">100 000 км</div>
+                                    </div>
+                                    <div class="result-auto__item">
+                                        <img class="result-auto__item-image" src="assets/images/icon/car-engine.svg"
+                                            alt="">
+                                        <div class="result-auto__item-text">3,5 л</div>
+                                    </div>
+                                    <div class="result-auto__item">
+                                        <img class="result-auto__item-image" src="assets/images/icon/sedan.svg" alt="">
+                                        <div class="result-auto__item-text">Седан</div>
+                                    </div>
+                                    <div class="result-auto__item">
+                                        <img class="result-auto__item-image" src="assets/images/icon/engineering.svg"
+                                            alt="">
+                                        <div class="result-auto__item-text">Не вказано</div>
+                                    </div>
+                                    <div class="result-auto__item">
+                                        <img class="result-auto__item-image" src="assets/images/icon/heart.svg" alt="">
+                                        <div class="result-auto__item-text">Не заводиться і не їде</div>
+                                    </div>
+                                    <div class="result-auto__item">
+                                        <img class="result-auto__item-image" src="assets/images/icon/sedan.svg" alt="">
+                                        <div class="result-auto__item-text">Вода/Наводнення</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="result-auto__arrow" type="button">
+                                <img class="result-auto__arrow-image" src="assets/images/icon/arrow-auto.svg" alt="">
+                            </button>
+                    </div>
+                    </article>
+                    <article class="result-auto__article">
+                        <div class="result-auto__card">
+                            <div class="result-auto__image">
+                                <img class="result-auto__img" src="assets/images/lambo.png" alt="Lamborgini">
+                            </div>
+                            <div class="result-auto__info">
+                                <div class="result-auto__info-top">
+                                    <div class="result-auto__name">Lamborghini 2021</div>
+                                    <div class="result-auto__date">
+                                        <div class="result-auto__date-title">Дата аукціону</div>
+                                        <div class="result-auto__date-num">20.02.2021</div>
+                                    </div>
+                                </div>
+                                <div class="result-auto__list">
+                                    <div class="result-auto__item">
+                                        <img class="result-auto__item-image" src="assets/images/icon/calendar.svg"
+                                            alt="">
+                                        <div class="result-auto__item-text">2021</div>
+                                    </div>
+                                    <div class="result-auto__item">
+                                        <img class="result-auto__item-image" src="assets/images/icon/benzine.svg"
+                                            alt="">
+                                        <div class="result-auto__item-text">Бензин</div>
+                                    </div>
+                                    <div class="result-auto__item">
+                                        <img class="result-auto__item-image" src="assets/images/icon/road.svg" alt="">
+                                        <div class="result-auto__item-text">100 000 км</div>
+                                    </div>
+                                    <div class="result-auto__item">
+                                        <img class="result-auto__item-image" src="assets/images/icon/car-engine.svg"
+                                            alt="">
+                                        <div class="result-auto__item-text">3,5 л</div>
+                                    </div>
+                                    <div class="result-auto__item">
+                                        <img class="result-auto__item-image" src="assets/images/icon/sedan.svg" alt="">
+                                        <div class="result-auto__item-text">Седан</div>
+                                    </div>
+                                    <div class="result-auto__item">
+                                        <img class="result-auto__item-image" src="assets/images/icon/engineering.svg"
+                                            alt="">
+                                        <div class="result-auto__item-text">Не вказано</div>
+                                    </div>
+                                    <div class="result-auto__item">
+                                        <img class="result-auto__item-image" src="assets/images/icon/heart.svg" alt="">
+                                        <div class="result-auto__item-text">Не заводиться і не їде</div>
+                                    </div>
+                                    <div class="result-auto__item">
+                                        <img class="result-auto__item-image" src="assets/images/icon/sedan.svg" alt="">
+                                        <div class="result-auto__item-text">Вода/Наводнення</div>
+                                    </div>
+                                </div>
+                                <div class="result-auto__price">
+                                    <img class="result-auto__price-image" src="assets/images/icon/money.svg" alt="">
+                                    <div class="result-auto__item-num">25$</div>
+                                </div>
+                                <div class="result-auto__buttons">
+                                    <button class="result-auto__button btn-white" type="button">Тортуватись</button>
+                                    <button class="result-auto__button btn-pink" type="button">Більше деталей</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="result-auto__mobile">
+                            <div class="result-auto__date">
+                                <div class="result-auto__date-title">Дата аукціону:</div>
+                                <div class="result-auto__date-num">20.02.2021</div>
+                            </div>
+                            <div class="result-auto__list">
+                                <div class="result-auto__item">
+                                    <img class="result-auto__item-image" src="assets/images/icon/calendar.svg" alt="">
+                                    <div class="result-auto__item-text">2021</div>
+                                </div>
+                                <div class="result-auto__item">
+                                    <img class="result-auto__item-image" src="assets/images/icon/benzine.svg" alt="">
+                                    <div class="result-auto__item-text">Бензин</div>
+                                </div>
+                                <div class="result-auto__item">
+                                    <img class="result-auto__item-image" src="assets/images/icon/road.svg" alt="">
+                                    <div class="result-auto__item-text">100 000 км</div>
+                                </div>
+                                <div class="result-auto__item">
+                                    <img class="result-auto__item-image" src="assets/images/icon/car-engine.svg" alt="">
+                                    <div class="result-auto__item-text">3,5 л</div>
+                                </div>
+                                <div class="result-auto__item">
+                                    <img class="result-auto__item-image" src="assets/images/icon/sedan.svg" alt="">
+                                    <div class="result-auto__item-text">Седан</div>
+                                </div>
+                                <div class="result-auto__item">
+                                    <img class="result-auto__item-image" src="assets/images/icon/engineering.svg"
+                                        alt="">
+                                    <div class="result-auto__item-text">Не вказано</div>
+                                </div>
+                                <div class="result-auto__item">
+                                    <img class="result-auto__item-image" src="assets/images/icon/heart.svg" alt="">
+                                    <div class="result-auto__item-text">Не заводиться і не їде</div>
+                                </div>
+                                <div class="result-auto__item">
+                                    <img class="result-auto__item-image" src="assets/images/icon/sedan.svg" alt="">
+                                    <div class="result-auto__item-text">Вода/Наводнення</div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="result-auto__arrow" type="button">
+                            <img class="result-auto__arrow-image" src="assets/images/icon/arrow-auto.svg" alt="">
+                        </button>
+                </div>
+                </article>
+            </section>
+
+            <section class="excellence" id="excellence">
+                <div class="container">
+                    <div class="excellence__inner">
+                        <div class="excellence__list">
+                            <div class="excellence__item">
+                                <div class="excellence__photo">
+                                    <img src="assets/images/photo.png" alt="Богдан Балинський">
+                                </div>
+                                <div class="excellence__name">Богдан Балинський</div>
+                                <div class="excellence__post">
+                                    FAUNDER “YOUR<span class="orange-txt">TRUE</span>CAR”
+                                </div>
+                            </div>
+                            <div class="excellence__item">
+                                <h2 class="excellence__title">Чому ми?</h2>
+                                <p class="excellence__par">
+                                    <span class="orange-txt">-</span> Найперше запитання яке виникає у
+                                    момент коли Ви вирішили придбати
+                                    автомобіль – як же зробити це так аби був
+                                    хороший автомобіль та ще на мій бюджет ?
+                                </p>
+                                <p class="excellence__par">
+                                    <span class="orange-txt">-</span> Що далі робити
+                                    із автомобілем після того як його буде
+                                    доставлено в Україну, адже він буде з
+                                    пошкодженнями – навіть якщо із манімальними?
+                                    Як їх відремонтувати?
+                                    А мене ж швидше за все обмануть!!!
+                                </p>
+                                <div class="excellence__variants">
+                                    <p class="excellence__variants-par">
+                                        Є звісно декілька варіант які пропонує компанія «Your<span
+                                            class="orange-txt">True</span>Car».
+                                    </p>
+                                    <p class="excellence__variants-par">
+                                        Тож давайте розглянемо ці варіанти більш детально.
+                                    </p>
+                                </div>
+                                <div class="excellence__arrow">
+                                    <img src="assets/images/icon/arrow-down.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="choice">
+                <div class="container">
+                    <div class="choice__inner">
+                        <h2 class="choice__title">Що вибрати?</h2>
+                        <div class="choice__row">
+                            <div class="choice__item">
+                                <div class="choice__image">
+                                    <img class="choice__img" src="assets/images/choice1.svg" alt="">
+                                    <div class="choice__text">При цьому Ви звісно будете
+                                        звертати увагу на автомобілі більш свіжиш років,
+                                        які були доставлені з-за кордону, скажімо із США
+                                        чи Канади, оскільки вони дещо нижчі у ціні, а ніж
+                                        автомобіль із Європи. Також Ви матимете можливість
+                                        оглянути автомобіль самостійно та завітати на СТО
+                                        де його оглянуть спеціалісти. Разом із тим, Ви повинні
+                                        врахувати той факт, що при таких умовах Ви не зможете
+                                        зекономити, оскільки купуєте автомобіль по ринковій
+                                        вартості в Україні, та ще й автомобіль, який був привезений
+                                        із США, відремонтований та на якому при продажі заробляють
+                                        гроші, так звані «перекупи» або ж пересічні громадяни,
+                                        які уже зрозуміли вигоду від такого інвестування коштів.</div>
+                                </div>
+                                <div class="choice__description">
+                                    Придбати автомобіль в Україні, знайшовши
+                                    його через своїх
+                                    знайомих або ж через такі сайти як «Авторіа».
+                                </div>
+                                <button class="choice__button btn-pink" type="button">Що мене очікує</button>
+                            </div>
+                            <div class="choice__versus">VS</div>
+                            <div class="choice__item">
+                                <div class="choice__image">
+                                    <img class="choice__img" src="assets/images/choice2.svg" alt="">
+                                    <div class="choice__text">При цьому Ви звісно будете
+                                        звертати увагу на автомобілі більш свіжиш років,
+                                        які були доставлені з-за кордону, скажімо із США
+                                        чи Канади, оскільки вони дещо нижчі у ціні, а ніж
+                                        автомобіль із Європи. Також Ви матимете можливість
+                                        оглянути автомобіль самостійно та завітати на СТО
+                                        де його оглянуть спеціалісти. Разом із тим, Ви повинні
+                                        врахувати той факт, що при таких умовах Ви не зможете
+                                        зекономити, оскільки купуєте автомобіль по ринковій
+                                        вартості в Україні, та ще й автомобіль, який був привезений
+                                        із США, відремонтований та на якому при продажі заробляють
+                                        гроші, так звані «перекупи» або ж пересічні громадяни,
+                                        які уже зрозуміли вигоду від такого інвестування коштів.</div>
+                                </div>
+                                <div class="choice__description">
+                                    Придбати автомобіль через компанію «Your<span class="orange-txt">True</span>Car»
+                                </div>
+                                <button class="choice__button btn-pink" type="button">Що мене очікує</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="messages">
+                <div class="container">
+                    <div class="messages__inner">
+                        <div class="messages__list">
+                            <div class="messages__item">
+                                І так, тепер детальніше про те, як же
+                                відбувається процес купівлі автомобіля
+                                на страхових аукціонах у США та Канаді,
+                                яку вигоду Ви при цьому
+                                отримуєте та чому не потрібно цього боятись.
+                            </div>
+
+                            <div class="messages__item">
+                                Головним приорітетом для нас є звісно
+                                «Ціна купівлі лоту на аукціоні». Перед
+                                купівлею ми прораховуємо для Вас автомобіль.
+                                Похибка може складати 100-200 доларів,
+                                і виникає вона через різницю у курсі валют
+                                на день купівлі автомобіля і на день його
+                                розмитнення. Тобто авто може бути дешевше абож
+                                дорожче на вказану суму. В середньому,
+                                економія буде складати біля 25%. Можливо і
+                                більше, усе залежить від автомобіля
+                                та його ціни купівлі а також Ваших побажань.
+                            </div>
+
+                            <div class="messages__item">
+                                І так, тепер детальніше про те, як же
+                                відбувається процес купівлі автомобіля
+                                на страхових аукціонах у США та Канаді,
+                                яку вигоду Ви при цьому
+                                отримуєте та чому не потрібно цього боятись.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sequence">
+                <div class="container">
+                    <div class="sequence__inner">
+                        <h2 class="sequence__title">Як усе відбувається</h2>
+                        <ul class="sequence__list">
+                            <li class="sequence__item">
+                                <div class="sequence__item-number">1</div>
+                                <div class="sequence__item-text">
+                                    Ви звертаєтесь до компанії та вказуєте, який саме автомобіль
+                                    Ви хочете придбати або ж вказуєте суму на яку розраховуєте.
+                                </div>
+                            </li>
+                            <li class="sequence__item">
+                                <div class="sequence__item-number">2</div>
+                                <div class="sequence__item-text">
+                                    Після підбору автомобіля що є для Вас найцікавішим,
+                                    складається договір на надання відповідних послуг.
+                                </div>
+                            </li>
+                            <li class="sequence__item">
+                                <div class="sequence__item-number">3</div>
+                                <div class="sequence__item-text">
+                                    Ви маєте на розрахунковий рахунок фірми
+                                    сплатити залогову суму, яка складає 15 %
+                                    або не менше 1000 доларів від обговореної
+                                    суми викупу автомобіля. Чому саме 15 % -
+                                    усе через те, що у разі, якщо наступного
+                                    дня Ви відмовитесь проплатити на аукціон
+                                    вартість автомобіля та аукціонного збору
+                                    на фірму буде накладено штраф у розмірі даних
+                                    15 % або 1000 доларів США
+                                    ( в залежності від того яка сума буде більша)
+                                </div>
+                            </li>
+                            <li class="sequence__item">
+                                <div class="sequence__item-number">4</div>
+                                <div class="sequence__item-text">
+                                    Ви звертаєтесь до компанії та вказуєте, який саме автомобіль
+                                    Ви хочете придбати або ж вказуєте суму на яку розраховуєте.
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="advantage">
+                <div class="container">
+                    <div class="advantage__inner">
+                        <h2 class="advantage__title">
+                            Чому варто працювати з «Your<span class="orange-txt">True</span>Car»
+                        </h2>
+
+                        <ul class="advantage__list">
+                            <li class="advantage__item">
+                                <img class="advantage__icon" src="assets/images/icon/question.svg" alt="">
+                                <div class="advantage__text">
+                                    Допомога у виборі лотів (незначні пошкодження,
+                                    приваблива стартова ціна за визначеним бюджетом).
+                                </div>
+                            </li>
+                            <li class="advantage__item pl">
+                                <img class="advantage__icon" src="assets/images/icon/peace.svg" alt="">
+                                <div class="advantage__text">
+                                    Спільна участь в торгах (можлива як в офісі
+                                    компанії, так і по телефону в режимі онлайн).
+                                </div>
+                            </li>
+                            <li class="advantage__item pl">
+                                <img class="advantage__icon" src="assets/images/icon/dollar.svg" alt="">
+                                <div class="advantage__text">
+                                    Чесні ціни на морський фрахт та перевезення по
+                                    суші (відсутність прихованих націнок та завищених за ціною платежів).
+                                </div>
+                            </li>
+                            <li class="advantage__item">
+                                <img class="advantage__icon" src="assets/images/icon/customer.svg" alt="">
+                                <div class="advantage__text">
+                                    Всі платежі здійснюються покупцем напряму в США.
+                                </div>
+                            </li>
+                            <li class="advantage__item">
+                                <img class="advantage__icon" src="assets/images/icon/placeholder.svg" alt="">
+                                <div class="advantage__text">
+                                    Відстеження місця перебування вантажу
+                                    24/7 за власним трекінговим номером.
+                                </div>
+                            </li>
+                            <li class="advantage__item">
+                                <img class="advantage__icon" src="assets/images/icon/file.svg" alt="">
+                                <div class="advantage__text">
+                                    Допомога в митному оформленні (швидко та надійно).
+                                </div>
+                            </li>
+                            <li class="advantage__item">
+                                <img class="advantage__icon" src="assets/images/icon/commission.svg" alt="">
+                                <div class="advantage__text">
+                                    Мінімальна незмінна комісія за послуги.
+                                </div>
+                            </li>
+                            <li class="advantage__item">
+                                <img class="advantage__icon" src="assets/images/icon/express-delivery.svg" alt="">
+                                <div class="advantage__text">
+                                    Доставка автівки за адресою покупця.
+                                </div>
+                            </li>
+                            <li class="advantage__item">
+                                <img class="advantage__icon" src="assets/images/icon/clipboard.svg" alt="">
+                                <div class="advantage__text">
+                                    Обов’язкова страхова підтримка від моменту покупки до
+                                    підписання Акту прийому-передачі придбаного авто.
+                                </div>
+                            </li>
+                            <li class="advantage__item">
+                                <img class="advantage__icon" src="assets/images/icon/help-icon.svg" alt="">
+                                <div class="advantage__text">
+                                    Допомога досвідчених консультантів, які з радістю допоможуть Вам на
+                                    кожному з етапів по вибору, придбанню та перевезенню Вашого автомобіля.
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="recall" id="recall">
+                <div class="container">
+                    <div class="recall__inner">
+                        <h2 class="recall__title">Відгуки</h2>
+                        <div class="recall__content">
+                            <button class="recall__arrow prev" type="button">
+                                <img class="recall__image-prev" src="assets/images/icon/prev.svg" alt="">
+                            </button>
+                            <div class="recall__items">
+
+                                <div class="recall__item">
+                                    <div class="recall__photo">
+                                        <img class="recall__photo-img item-1" src="assets/images/slider1.png" alt="">
+                                        <img class="recall__photo-img item-2" src="assets/images/slider1.png" alt="">
+                                    </div>
+                                    <div class="recall__text text-1">
+                                        <div class="recall__item-title">Іван Іванович</div>
+                                        <div class="recall__description">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Ornare justo aliquam mollis at urna. Quam risus commodo
+                                            cursus tristique faucibus tortor mi. Sed proin amet, aliquet
+                                            odio tellus faucibus commodo pellentesque. Scelerisque adipiscing
+                                            dolor pellentesque viverra porttitor ipsum quis. Donec et at risus
+                                            dictumst. Enim at netus lectus et in. Aliquam tincidunt vitae, sit
+                                            tellus nec fames. Ornare mollis vestibulum magna amet interdum in
+                                            enim massa metus.
+                                            Suspendisse donec volutpat scelerisque tristique.
+                                        </div>
+                                    </div>
+                                    <div class="recall__text text-2">
+                                        <div class="recall__item-title">Dmitriy Zebra</div>
+                                        <div class="recall__description">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Ornare justo aliquam mollis at urna. Quamodo pellentesque. Scelerisque
+                                            adipiscing
+                                            dolor pellentesque viverra porttitor ipsum quis. Donec et at risus
+                                            dictumst. Enim at netus lectus et in. Aliquam tincidunt vitae, sit
+                                            tellus nec fames. Ornare mollis vestibulm risus commodo
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="recall__arrow next" type="button">
+                                <img class="recall__image-next" src="assets/images/icon/next.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="calculator" id="calculator">
+                <div class="container">
+                    <div class="calculator__inner">
+                        <h2 class="calculator__title">Калькулятор вартості</h2>
+                        <div class="calculator__content">
+                            <div class="calculator__auto">
+                                <div class="calculator__item-title">Характеристики автомобіля</div>
+                                <div class="calculator-group">
+                                    <div class="select-wrappper">
+                                        <div class="select-wrap">
+                                            <div class="select-title">Тип транспортного засобу</div>
+                                            <select class="calculator-group__select" name="state">
+                                                <option value="item1">Легковий</option>
+                                            </select>
+                                        </div>
+                                        <div class="select-wrap">
+                                            <div class="select-title">Тип двигуна</div>
+                                            <select class="calculator-group__select" name="state">
+                                                <option value="item1">Дизельный</option>
+                                            </select>
+                                        </div>
+                                        <div class="select-wrap">
+                                            <div class="select-title">Об’єм двигуна(л)</div>
+                                            <select class="calculator-group__select" name="state">
+                                                <option value="item1">3.5</option>
+                                            </select>
+                                        </div>
+                                        <div class="select-wrap">
+                                            <div class="select-title">Об’єм батареї <span class="min">(квт*год)</span>
+                                            </div>
+                                            <select class="calculator-group__select" name="state">
+                                                <option value="item1">0</option>
+                                                <option value="item1">0</option>
+                                                <option value="item1">0</option>
+                                            </select>
+                                        </div>
+                                        <div class="select-wrap">
+                                            <div class="select-title">Рік випуску</div>
+                                            <select class="calculator-group__select" name="state">
+                                                <option value="item1">2021</option>
+                                            </select>
+                                        </div>
+                                        <div class="select-wrap">
+                                            <div class="select-title">Вартість($)</div>
+                                            <select class="calculator-group__select" name="state">
+                                                <option value="item1">0</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calculator__auction">
+                                <div class="calculator__item-title">Характеристики аукціону</div>
+                                <div class="select-wrappper">
+                                    <div class="select-wrap">
+                                        <div class="select-title">Тип двигуна</div>
+                                        <select class="calculator-group__select" name="state">
+                                            <option value="item1">Легковий</option>
+                                        </select>
+                                    </div>
+                                    <div class="select-wrap">
+                                        <div class="select-price">0$</div>
+                                    </div>
+                                    <div class="select-wrap">
+                                        <div class="select-title">Об’єм батареї <span class="min">(квт*год)</span></div>
+                                        <select class="calculator-group__select" name="state">
+                                            <option value="item1">0</option>
+                                            <option value="item1">0</option>
+                                            <option value="item1">0</option>
+                                        </select>
+                                    </div>
+                                    <div class="select-wrap">
+                                        <div class="select-price">100$</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calculator__item">
+                                <div class="calculator__name">Доставка з США</div>
+                                <div class="calculator__name2">HOUSTON,TX </div>
+                                <div class="calculator__price">800$</div>
+                            </div>
+                            <div class="calculator__item">
+                                <div class="calculator__name">Документи на експорт авто</div>
+                                <div class="calculator__price">150$</div>
+                            </div>
+                            <div class="calculator__item">
+                                <div class="calculator__name">Вигрузка з порту Клайпеда</div>
+                                <div class="calculator__price">360$</div>
+                            </div>
+                            <div class="calculator__item">
+                                <div class="calculator__name">Доставка Клайпеда - Львів</div>
+                                <div class="calculator__price">460$</div>
+                            </div>
+                            <div class="calculator__item">
+                                <div class="calculator__name">Проходження кордону та залучення спец. транспорту</div>
+                                <div class="calculator__price">100$</div>
+                            </div>
+                            <div class="calculator__item">
+                                <div class="calculator__name">Акциз</div>
+                                <div class="calculator__price">100$</div>
+                            </div>
+                            <div class="calculator__item">
+                                <div class="calculator__name">Ввізне мито</div>
+                                <div class="calculator__price">100$</div>
+                            </div>
+                            <div class="calculator__item">
+                                <div class="calculator__name">ПВД</div>
+                                <div class="calculator__price">100$</div>
+                            </div>
+                            <div class="calculator__item">
+                                <div class="calculator__name">Брокерські послуги</div>
+                                <div class="calculator__price">100$</div>
+                            </div>
+                            <div class="calculator__item">
+                                <div class="calculator__name">Доставка на митницю</div>
+                                <div class="calculator__price">100$</div>
+                            </div>
+                            <div class="calculator__item">
+                                <div class="calculator__name">Комісія YOUR<span class="orange-txt">TRUE</span>CAR</div>
+                                <div class="calculator__price">100$</div>
+                            </div>
+                        </div>
+                        <div class="calculator__delivery">
+                            <div class="calculator__delivery-text">
+                                <div class="calculator__delivery-title">Всього ціна з доставкою</div>
+                                <div class="calculator__delivery-par">
+                                    Підсумкова вартість складається з вартості лота
+                                    (включаючи збори і комісії),
+                                    доставки авто до порту країни
+                                    призначення і розмитнення. Розрахунки є попередніми.
+                                    Напишіть нам для отримання точного прорахунку.
+                                </div>
+                                <div class="calculator__delivery-par">
+                                    Комісія за переказ коштів в США 1% $
+                                </div>
+                                <div class="calculator__delivery-par">
+                                    Ціна за доставку одного авто з США вказана при умові,
+                                    що в контейнері 4 автомобілі. Якщо в контейнері 3 авто,
+                                    відповідно варість
+                                    за місце в контейнері буде збільшена.
+                                </div>
+                            </div>
+                            <button class="calculator__delivery-btn">Отримати повну інформацію</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <nav class="main-nav">
+                <div class="container">
+                    <div class="main-nav__inner">
+                        <div class="main-nav__logo">
+                            <img class="main-nav__logo-image" src="assets/images/Logo.png" alt="YOURTRUECAR">
+                        </div>
+                        <ul class="main-nav__list">
+                            <li class="main-nav__item">
+                                <a class="main-nav__link" href="#result-auto">Авто на аукціоні</a>
+                            </li>
+                            <li class="main-nav__item">
+                                <a class="main-nav__link" href="#calculator">Калькулятор вартості</a>
+                            </li>
+                            <li class="main-nav__item">
+                                <a class="main-nav__link" href="#excellence">Про нас</a>
+                            </li>
+                            <li class="main-nav__item">
+                                <a class="main-nav__link" href="#recall">Відгуки клієнтів</a>
+                            </li>
+                        </ul>
+                        <div class="main-nav__phone">
+                            <a class="main-nav__phone-link" href="tel:+79899899898">
+                                <img class="main-nav__phone-image" src="assets/images/icon/phone.svg" alt="Позвонить">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </footer>
+        </main>
+
+        <script src="//code-sb1.jivosite.com/widget/ADEkowaby9" async></script>
+
+        <script src="assets/js/nouislider.min.js"></script>
+        <script src="assets/js/jquery-3.6.0.min.js"></script>
+        <script src="assets/js/app.js"></script>
+</body>
+
+</html>
